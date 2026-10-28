@@ -25,10 +25,32 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My four orders, and which ones modify the original:
+# 1. In:The same eight marketing campaign budgets used in exercise 4.0.
+# 2. Process:Display the original, reversed, ascending, and descending orders.
+# 3. Out:Four arrangements of the budgets, followed by the unchanged original list.
+# 4. My four orders, and which ones modify the original:Original, reversed, ascending, and descending.
+
 
 
 # Your code below
+
+# Store the same campaign budgets as in exercise 4.0.
+budgets = [500, 300, 800, 200, 600, 400, 700, 100]
+
+# Display the budgets in their original order.
+print("Original order:", budgets)
+
+# Create a reversed copy without changing the original list.
+reversed_budgets = budgets[::-1]
+print("Reversed order:", reversed_budgets)
+
+# Create an ascending copy without changing the original list.
+ascending_budgets = sorted(budgets)
+print("Ascending order:", ascending_budgets)
+
+# Create a descending copy without changing the original list.
+descending_budgets = sorted(budgets, reverse=True)
+print("Descending order:", descending_budgets)
+
+# Display the original list again to check that its order is unchanged.
+print("Original list at the end:", budgets)

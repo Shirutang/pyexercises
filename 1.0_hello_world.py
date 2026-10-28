@@ -22,15 +22,20 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My message, and why:
+# 1. In:A message and the number of repetitions.
+# 2. Process:Repeat the message and number each line starting from 1.
+# 3. Out:Five numbered lines displaying the same message.
+# 4. My message, and why:"growing towards the sun" because it encourages me to work hard
 
 
 # Your code below
-print("hello world ！")
-print("1, Hello")
-print("2, Hello")
-print("3, Hello")
-print("4, Hello")
+message = "growing towards the sun"
+times = 5
+
+# Display the message with a line number each time.
+for number in range(1, times + 1):
+    print(number, message)
+
+# Test result: times = 5 produced five numbered lines.
+# Changing only 5 to 3 produced three numbered lines.
+# I restored times to 5 after testing.
